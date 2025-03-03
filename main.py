@@ -17,7 +17,7 @@ if not email or not password:
     exit()
 
 def abrir_navegador():
-    """Abre o navegador Chrome em modo anônimo"""
+    # Abre o navegador Chrome em modo anônimo
     try:
         pg.press('win')
         time.sleep(1)
@@ -33,7 +33,7 @@ def abrir_navegador():
         exit()
 
 def fazer_login():
-    """Faz login no Google"""
+    # Faz login no Google
     try:
         # Acessar a página de login do Google
         pg.hotkey('ctrl', 'l')  # Selecionar barra de endereço
@@ -57,7 +57,7 @@ def fazer_login():
         exit()
 
 def acessar_drive():
-    """Abre o Google Drive e entra na planilha"""
+    # Abre o Google Drive e entra na planilha 
     try:
         # Acessar Google Drive
         pg.hotkey('ctrl', 't')  # Nova guia
@@ -80,7 +80,7 @@ def acessar_drive():
         exit()
 
 def copiar_dados_do_sheets():
-    """Seleciona e copia os dados da planilha"""
+    # Seleciona e copia os dados da planilha
     try:
         # Selecionar toda a planilha (Ctrl + A)
         pg.hotkey('ctrl', 'a')
@@ -96,7 +96,7 @@ def copiar_dados_do_sheets():
         exit()
 
 def colar_no_excel():
-    """Abre o Excel e cola os dados copiados"""
+    # Abre o Excel e cola os dados copiados
     try:
         # Abrir o Excel (caso esteja no menu iniciar)
         pg.press('win')
@@ -120,7 +120,7 @@ def colar_no_excel():
         exit()
 
 def main():
-    """Fluxo de execução"""
+    # Fluxo de execução do Script
     abrir_navegador()
     fazer_login()
     acessar_drive()
