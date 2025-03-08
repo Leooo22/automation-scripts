@@ -1,2 +1,4 @@
-*venv
-*.env
+venv
+.env
+__pycache__
+Location_Past_Xlsx
